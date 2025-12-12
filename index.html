@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dennis Alipa | System Portfolio</title>
+    <style>
+        /* CSS Design - Terminal / Hacker Style */
+        :root {
+            --bg-color: #0d1117;
+            --term-green: #00ff41;
+            --term-white: #e6edf3;
+            --term-gray: #8b949e;
+            --border-color: #30363d;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: var(--bg-color);
+            color: var(--term-white);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Header Style as System Info */
+        header {
+            border-bottom: 2px dashed var(--term-gray);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { color: var(--term-green); margin: 0; font-size: 1.5rem; }
+        .prompt { color: var(--term-gray); }
+        .cursor { display: inline-block; width: 10px; height: 18px; background: var(--term-green); animation: blink 1s infinite; }
+
+        @keyframes blink { 50% { opacity: 0; } }
+
+        /* Section Boxes as "Windows" */
+        section {
+            border: 1px solid var(--border-color);
+            background: #161b22;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+
+        h2 {
+            background-color: var(--border-color);
+            color: var(--term-green);
+            font-size: 1rem;
+            margin: -15px -15px 15px -15px; /* Pull to edges */
+            padding: 8px 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Timeline as Directory Structure */
+        .tree-structure {
+            padding-left: 10px;
+            border-left: 1px solid var(--term-gray);
+            margin-left: 10px;
+        }
+
+        .node {
+            margin-bottom: 15px;
+            position: relative;
+        }
+        
+        .node::before {
+            content: "├──";
+            position: absolute;
+            left: -11px;
+            color: var(--term-gray);
+        }
+
+        .node-title { color: #79c0ff; font-weight: bold; }
+
+        /* Command Line Look for Action Plan */
+        .cmd-box {
+            background: black;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            overflow-x: auto;
+        }
+
+        .cmd-line { display: block; margin-bottom: 5px; }
+        .cmd-command { color: #d2a8ff; } /* Purple for commands */
+        .cmd-output { color: var(--term-gray); margin-left: 20px; display: block; }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--term-gray);
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="prompt">root@dennis-portfolio:~$ <span class="cursor"></span></div>
+        <br>
+        <h1>DENNIS T. ALIPA</h1>
+        <p>BS Computer Engineering | Future Network Engineer</p>
+        <p style="color: var(--term-gray)">> Initializing Digital Portfolio...</p>
+    </header>
+
+    <section>
+        <h2>01_PERSONAL_STATEMENT.txt</h2>
+        <p>"I am a Computer Engineering major dedicated to acquiring knowledge and self improvement. This portfolio is a testimony to my growth and the way I am preparing for my future profession."</p>
+    </section>
+
+    <section>
+        <h2>02_ENVISIONED_SELF_PLAN</h2>
+        <div class="tree-structure">
+            <div class="node">
+                <span class="node-title">[5 YEARS] Entry Level</span>
+                <div>> Working in a technology job connected to Computer Engineering.</div>
+                <div>> Financially stable and supporting family.</div>
+            </div>
+            <div class="node">
+                <span class="node-title">[10 YEARS] Senior Position</span>
+                <div>> Network Engineer or Systems Analyst.</div>
+                <div>> Stable residence and constant income.</div>
+            </div>
+            <div class="node">
+                <span class="node-title">[20 YEARS] Authority / Expert</span>
+                <div>> Position of power to teach and direct others.</div>
+                <div>> Strong and stable family support.</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>03_EXECUTE_ACTION_PLAN.sh</h2>
+        <div class="cmd-box">
+            <span class="cmd-line"><span class="cmd-command">run</span> phase_1_five_years</span>
+            <span class="cmd-output">- Complete Degree</span>
+            <span class="cmd-output">- Acquire Tech Skills & Internships</span>
+            <br>
+            <span class="cmd-line"><span class="cmd-command">run</span> phase_2_ten_years</span>
+            <span class="cmd-output">- Get Certified (Specialization)</span>
+            <span class="cmd-output">- Invest for Long Term</span>
+            <br>
+            <span class="cmd-line"><span class="cmd-command">run</span> phase_3_twenty_years</span>
+            <span class="cmd-output">- Mentorship & Financial Security</span>
+            <span class="cmd-output">- Work-Life Balance</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>04_SYSTEM_LOGS / PROJECTS</h2>
+        <ul>
+            <li><span style="color:var(--term-green)">[SUCCESS]</span> <strong>Academic Work:</strong> Journals, Research, Presentations.</li>
+            <li><span style="color:var(--term-green)">[SUCCESS]</span> <strong>Technical Work:</strong> Programming tasks & Troubleshooting.</li>
+            <li><span style="color:var(--term-green)">[LOADING]</span> <strong>Personal Projects:</strong> Inventive works revealing talents.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>System Status: ONLINE | Trimex Colleges | COE1M1</p>
+        <p>© 2025 Dennis T. Alipa</p>
+    </footer>
+
+</div>
+
+</body>
+  </html>
+  
